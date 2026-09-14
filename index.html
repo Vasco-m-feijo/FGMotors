@@ -56,6 +56,47 @@
         </div>
       </section>
 
+      <section class="workshop-gallery" aria-labelledby="workshop-gallery-title">
+        <div class="container">
+          <div class="gallery-heading">
+            <div>
+              <p class="eyebrow">Por dentro da oficina</p>
+              <h2 id="workshop-gallery-title">Nossa oficina em ação</h2>
+              <p class="gallery-intro">
+                Conheça o espaço e o cuidado que colocamos em cada serviço.
+              </p>
+            </div>
+            <div class="gallery-controls" aria-label="Controles da galeria">
+              <button class="gallery-button" type="button" data-gallery-direction="-1" aria-label="Foto anterior">
+                &#8592;
+              </button>
+              <button class="gallery-button" type="button" data-gallery-direction="1" aria-label="Próxima foto">
+                &#8594;
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery-track" tabindex="0" aria-label="Fotos da oficina">
+            <figure class="gallery-card">
+              <img src="assets/image.png" alt="Área de atendimento da oficina FG Motors" loading="lazy" />
+              <figcaption>Estrutura preparada para receber você</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/image copy.png" alt="Veículo em manutenção na FG Motors" loading="lazy" />
+              <figcaption>Cuidado em cada etapa da manutenção</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/image2.png" alt="Equipe trabalhando na oficina FG Motors" loading="lazy" />
+              <figcaption>Equipe técnica e experiência</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="assets/image3.png" alt="Interior da oficina FG Motors" loading="lazy" />
+              <figcaption>Um ambiente organizado e profissional</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
       <section class="about">
         <div class="container">
           <h2>Por que escolher a FG Motors?</h2>
@@ -76,5 +117,21 @@
     >
       WhatsApp
     </a>
+
+    <script>
+      const galleryTrack = document.querySelector(".gallery-track");
+      const galleryCards = document.querySelectorAll(".gallery-card");
+      const galleryButtons = document.querySelectorAll("[data-gallery-direction]");
+
+      const moveGallery = (direction) => {
+        const cardWidth = galleryCards[0].getBoundingClientRect().width;
+        const gap = parseFloat(getComputedStyle(galleryTrack).gap);
+        galleryTrack.scrollBy({ left: direction * (cardWidth + gap), behavior: "smooth" });
+      };
+
+      galleryButtons.forEach((button) => {
+        button.addEventListener("click", () => moveGallery(Number(button.dataset.galleryDirection)));
+      });
+    </script>
   </body>
 </html>
