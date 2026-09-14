@@ -1,13 +1,13 @@
 :root {
-  --bg: #050608;
-  --bg-soft: #0f1218;
-  --bg-panel: #171c25;
+  --bg: #06080d;
+  --bg-soft: #101725;
+  --bg-panel: #172033;
   --text: #f5f7fb;
-  --muted: #b8bfca;
-  --accent: #e10613;
-  --accent-strong: #ff2a3b;
-  --accent-dark: #93010d;
-  --line: rgba(255, 255, 255, 0.12);
+  --muted: #b7c2d4;
+  --accent: #1b64c9;
+  --accent-strong: #2f7ae0;
+  --accent-dark: #0b3f8f;
+  --line: rgba(180, 205, 240, 0.24);
 }
 
 * {
@@ -28,8 +28,8 @@ body {
 }
 
 .hero {
-  background: radial-gradient(circle at top left, rgba(255, 42, 59, 0.25), transparent 42%),
-    linear-gradient(135deg, rgba(225, 6, 19, 0.22), transparent 64%),
+  background: radial-gradient(circle at top left, rgba(47, 122, 224, 0.28), transparent 42%),
+    linear-gradient(135deg, rgba(27, 100, 201, 0.22), transparent 64%),
     var(--bg);
   padding: 5rem 0 4rem;
   border-bottom: 1px solid var(--line);
@@ -62,7 +62,7 @@ h1 {
 
 .services {
   padding: 4rem 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  background: linear-gradient(180deg, rgba(47, 122, 224, 0.08), transparent 45%);
 }
 
 .cards {
@@ -73,7 +73,7 @@ h1 {
 }
 
 .card {
-  background: linear-gradient(160deg, rgba(255, 42, 59, 0.08), transparent 55%),
+  background: linear-gradient(160deg, rgba(47, 122, 224, 0.1), transparent 55%),
     var(--bg-panel);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -93,7 +93,7 @@ h1 {
 
 .about {
   padding: 0 0 5rem;
-  background: linear-gradient(180deg, transparent, rgba(147, 1, 13, 0.18));
+  background: linear-gradient(180deg, transparent, rgba(11, 63, 143, 0.22));
 }
 
 .whatsapp-button {
