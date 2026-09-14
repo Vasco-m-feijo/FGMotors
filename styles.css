@@ -35,6 +35,13 @@ body {
   border-bottom: 1px solid var(--line);
 }
 
+.logo {
+  display: block;
+  width: min(220px, 55vw);
+  height: auto;
+  margin-bottom: 1.25rem;
+}
+
 .tag {
   color: var(--accent);
   font-weight: 700;
