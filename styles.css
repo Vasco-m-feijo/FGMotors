@@ -47,6 +47,7 @@ body {
   display: block;
   width: clamp(200px, 20vw, 300px);
   height: fit-content;
+  margin-inline: auto;
   margin-bottom: 1.25rem;
 }
 
