@@ -37,8 +37,8 @@ body {
 
 .logo {
   display: block;
-  width: min(220px, 55vw);
-  height: auto;
+  width: clamp(200px, 20vw, 300px);
+  height: fit-content;
   margin-bottom: 1.25rem;
 }
 
