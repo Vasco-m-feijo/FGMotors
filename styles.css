@@ -45,8 +45,9 @@ body {
 
 .logo {
   display: block;
-  width: min(220px, 55vw);
-  height: auto;
+  width: clamp(200px, 20vw, 300px);
+  height: fit-content;
+  margin-inline: auto;
   margin-bottom: 1.25rem;
 }
 
@@ -205,6 +206,74 @@ h1 {
   background: linear-gradient(180deg, transparent, rgba(11, 63, 143, 0.22));
 }
 
+.cta {
+  padding: 4rem 0;
+}
+
+.cta p {
+  color: var(--muted);
+  margin: 0.6rem 0 0;
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.cta-button {
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.8rem 1.15rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+  opacity: 0.92;
+  transform: translateY(-2px);
+}
+
+.cta-button-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.cta-button-instagram {
+  background: var(--accent);
+  color: #fff;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.6rem 0 2.2rem;
+}
+
+.site-footer p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.3rem;
+  margin-top: 0.65rem;
+}
+
+.footer-links a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--accent);
+}
+
 .whatsapp-button {
   position: fixed;
   right: 1.2rem;
@@ -235,5 +304,9 @@ h1 {
 
   .gallery-controls {
     align-self: end;
+  }
+
+  .site-footer p {
+    font-size: 0.95rem;
   }
 }
