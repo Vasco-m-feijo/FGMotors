@@ -77,9 +77,9 @@ h1 {
 }
 
 .services {
-  width: 90%;
+  width: 100%;
   padding: 4rem 0;
-  background: linear-gradient(180deg, rgba(47, 122, 224, 0.08), transparent 45%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), transparent 45%);
 }
 
 .cards {
