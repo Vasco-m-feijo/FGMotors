@@ -1,6 +1,6 @@
 # FG Motors
 
-Landing page estática da oficina **FG Motors** (Porto Alegre), desenvolvida com HTML e CSS puros.
+Landing page estática da oficina **FG Motors** (Porto Alegre), desenvolvida com HTML, CSS e JavaScript, sem frameworks.
 
 ## Visão geral
 
