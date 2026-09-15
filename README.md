@@ -8,7 +8,9 @@ O projeto apresenta:
 - Hero com identidade da marca
 - Seção de serviços (mecânica geral, motor, suspensão e freios)
 - Galeria da oficina com navegação horizontal
-- Botão de contato direto via WhatsApp
+- Seção CTA com botões de WhatsApp e Instagram
+- Rodapé com endereço e links de contato
+- Botão flutuante de contato direto via WhatsApp
 
 ## Estrutura do repositório
 
