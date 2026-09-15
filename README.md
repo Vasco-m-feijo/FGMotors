@@ -30,9 +30,9 @@ Opções:
 
 ## Personalização rápida
 
-- **Conteúdo textual:** edite `/home/runner/work/FGMotors/FGMotors/index.html`
-- **Cores e estilos:** edite `/home/runner/work/FGMotors/FGMotors/styles.css` (variáveis em `:root`)
-- **Imagens da galeria:** substitua os arquivos em `/home/runner/work/FGMotors/FGMotors/assets`
+- **Conteúdo textual:** edite `index.html`
+- **Cores e estilos:** edite `styles.css` (variáveis em `:root`)
+- **Imagens da galeria:** substitua os arquivos em `assets/`
 
 ## Tecnologias
 
