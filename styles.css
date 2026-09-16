@@ -1,5 +1,5 @@
 :root {
-  --bg: #06080d;
+  --bg: #000000;
   --bg-soft: #101725;
   --bg-panel: #172033;
   --text: #f5f7fb;
@@ -111,7 +111,7 @@ h1 {
 .workshop-gallery {
   padding: 4rem 0 5rem;
   overflow: hidden;
-  background: var(--bg-soft);
+  background: var(--bg);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -189,6 +189,7 @@ h1 {
 }
 
 .gallery-card img {
+  margin-top: 1rem;
   aspect-ratio: 4 / 3;
   display: block;
   object-fit: contain;
@@ -204,11 +205,14 @@ h1 {
 }
 
 .about {
+  margin-top: 4rem;
   padding: 0 0 5rem;
-  background: linear-gradient(180deg, transparent, rgba(11, 63, 143, 0.22));
+  background: var(--bg);
 }
 
 .cta {
+  border-top: 1px solid var(--line);
+  background: var(--bg);
   padding: 4rem 0;
 }
 
