@@ -26,24 +26,6 @@
   </header>
 
   <main>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FG Motors | Oficina Mecânica em Porto Alegre</title>
-    <meta
-      name="description"
-      content="FG Motors em Porto Alegre: mecânica geral, motor, suspensão e freios com atendimento profissional."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
       <section class="services container" aria-label="Serviços">
         <h2>Nossos serviços</h2>
         <div class="cards">
@@ -71,22 +53,22 @@
           <div class="gallery-heading">
             <div>
               <p class="eyebrow">Por dentro da oficina</p>
-              <h2 id="workshop-gallery-title">Nossa oficina em ação</h2>
+              <h2 id="workshop-gallery-title">Fotos e vídeos da FG Motors</h2>
               <p class="gallery-intro">
-                Conheça o espaço e o cuidado que colocamos em cada serviço.
+                Conheça o espaço, a estrutura e o cuidado que colocamos em cada serviço.
               </p>
             </div>
             <div class="gallery-controls" aria-label="Controles da galeria">
-              <button class="gallery-button" type="button" data-gallery-direction="-1" aria-label="Foto anterior">
+              <button class="gallery-button" type="button" data-gallery-direction="-1" aria-label="Mídia anterior">
                 &#8592;
               </button>
-              <button class="gallery-button" type="button" data-gallery-direction="1" aria-label="Próxima foto">
+              <button class="gallery-button" type="button" data-gallery-direction="1" aria-label="Próxima mídia">
                 &#8594;
               </button>
             </div>
           </div>
 
-          <div class="gallery-track" tabindex="0" aria-label="Fotos da oficina">
+          <div class="gallery-track" tabindex="0" aria-label="Fotos e vídeos da oficina">
             <figure class="gallery-card">
               <img src="assets/image.png" alt="Área de atendimento da oficina FG Motors" loading="lazy" />
               <figcaption>Estrutura preparada para receber você</figcaption>
@@ -102,6 +84,22 @@
             <figure class="gallery-card">
               <img src="assets/image3.png" alt="Interior da oficina FG Motors" loading="lazy" />
               <figcaption>Um ambiente organizado e profissional</figcaption>
+            </figure>
+            <figure class="gallery-card gallery-video-card">
+              <!-- Quando houver um vídeo, ele pode substituir este aviso. -->
+              <div
+                class="gallery-placeholder"
+                role="img"
+                aria-label="Vídeos da oficina FG Motors em breve"
+              >
+                <span class="play-icon" aria-hidden="true">&#9654;</span>
+                <span class="placeholder-title">Vídeos em breve</span>
+                <span class="placeholder-text">Novas imagens do espaço e dos serviços estão sendo preparadas.</span>
+              </div>
+              <figcaption>
+                <span class="media-label">Novas mídias</span>
+                Volte em breve para conhecer ainda mais a nossa oficina.
+              </figcaption>
             </figure>
           </div>
         </div>
